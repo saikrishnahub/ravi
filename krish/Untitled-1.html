@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+<body>
+         <div class="container">
+        <h1 id="sai">login</h1>
+        <label id="ms"><b>Full NAME</b></label><br>  
+        <input type="text"  id="username" placeholder="username"><br><br>
+
+        <label id="sk"><b>EMAIL</b></label><br>  
+        <input type="email" id="email" placeholder="email"><br><br>
+        <label id="ps"><b>PASSWORD</b></label><br>   
+        <input type="password" id="password" placeholder="password"><br><br>
+        <input type="submit" id="gn" onclick="test()">
+
+        </div>
+
+    <script>
+        
+       
+        
+
+
+        let title = document.querySelector('#sai');
+        title.style.color = 'red';
+
+          let sm = document.querySelector('#ms');
+          sm.style.color = 'aqua';
+
+          let raj = document.querySelector('#sk');
+          raj.style.color = 'blue';
+
+          let js = document.querySelector('#ps');
+          js.style.color = 'green';
+
+          let jk = document.querySelector('#gn');
+          jk.style.color = 'green';
+
+
+
+
+
+
+          /*let h1Element = document.createElement("h1");
+          h1Element.textContent = "saikrishna";
+
+          let containerElement = document.getElementById("mycontainer");
+          containerElement.appendChild(h1Element);
+
+          let btnElement = document.createElement("button");
+          btnElement.textContent = "change heading";
+          containerElement.appendChild(buttonElement);*/
+         
+         
+         
+
+        /* const input = document.querySelector("input");
+        h2= document.querySelector("h2");
+
+        input.addEventListener("keyup", display);
+
+        function display() {
+            localStorage.setItem('value',input.value);
+        
+             console.log(localStorage.getItem("value"));
+        }
+         localStorage.setItem('name','sai')
+         localStorage.setItem('name1','krishna')
+        localStorage.removeItem('name')
+
+
+        let myobj={
+            name:'sai',
+            age:28
+        };
+
+        {
+            name:'mani'
+            age:27
+        };
+         let myobj_seriazlized = JSON.stringify(myobj);
+        //  console.log(myobj_seriazlized);
+
+
+        localStorage.setItem('myobj',myobj);
+        console.log(localStorage);*/
+
+
+
+         
+
+
+         function test(){
+           var uid = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var pw = document.getElementById("password").value;
+        
+
+             var  user = localStorage.setItem("uid", uid);
+             var email = localStorage.setItem("email",email);
+             var pw = localStorage.setItem("pw",pw);
+             }
+
+         
+    </script>
+    
+</body>
+</html>
